@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Bot</title>
+</head>
+<body>
+    <header>
+        <div class="barra-cima">
+            <ul class="login">
+                <li><a href="cadastro.html">Cadastre-se</a> </li>
+                <li><a href="login.html">Login</a> </li>
+            </ul>
+        </div>
+        <div class="cabecalho">
+            <a href="index.html" alt="Voltar a página inicial">
+                <img src="imgsprint2/logo-metro-bot 1.png" alt="logoCabecalho" width="180" height="180">
+            </a>
+        </div>
+        <nav id="menu">
+            <div class="barra-baixo">
+                <ul>
+                    <li><a href="chatbot.html">Chat Bot</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="#">PT-BR</a></li>
+                    <img src="imgsprint2/istockphoto-530810572-612x612.jpg" alt="bandeira" width="25" height="18">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-chatbox">
+            <div class="chat-log">
+                <div class="mensagem">
+                    <p>MetrôBot: Olá! Como posso te ajudar hoje?</p>
+                </div>
+                <br>
+                <div class="mensagem2">
+                    <p>...</p>
+                </div>
+            </div>
+            <div class="enviar">
+                <input type="text" id="escrever" placeholder="| Digite aqui" />
+                <button class="microfoneImagem" onclick="microfone()">
+                    <img src="imgsprint2/mic_24dp_FF_FILL0_wght400_GRAD0_opsz24.png" alt="mic" width="25" height="25">
+                </button>
+                <button class="botaoEnviar" onclick="mensagemEnviada()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function microfone(){
+            alert("Microfone Habilitado!");
+        }
+        function mensagemEnviada(){
+            alert("Mensagem enviada com sucesso!");
+        }
+    </script>
+    <footer class="rodape">
+        <div class="logoMetro">
+            <img src="imgsprint2/logo-metro-bot 1.png" alt="logoMetroBot" width="70px">
+        </div>
+        <div class="rodapeTexto">
+            <h1>@2024 MetrôBot. Todos direitos reservados</h1>
+        </div>
+        <div class="logos">
+            <img src="imgsprint2/Logo Fiap.png" alt="logoFiap" width="100px">
+            <img src="imgsprint2/PNG Cor_Selo 25 anos_Grupo CCR_abril2024.png (1).png" alt="logoCCR" width="90px">
+        </div>
+    </footer>    
+</body>
+</html>
